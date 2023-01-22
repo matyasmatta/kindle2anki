@@ -1,0 +1,83 @@
+abajo;down;V;
+acallar;to silence;V;
+el afán;eagerness;N;m
+agrupar;to group;V;
+el alcance;reach;N;m
+allende;beyond;Prep;
+anhelar;to long;V;
+ansiar;to long for;V;
+el antojo;craving;N;m
+apagar;to turn off;V;
+apetecer;to feel like;V;
+arrastrar;to drag;V;
+arriesgar;to risk;V;
+basta;enough;Conj;
+bautizar;to baptize;V;
+el cabo;cape;N;m
+la caza;hunting;N;f
+cesar;to cease;V;
+el cohete;rocket;N;m
+el comité;committee;N;m
+la cotidianeidad;everyday life;N;f
+crujiente;crunchy;Adj;
+la cómoda;chest of drawers;N;f
+el la cónyuge;spouse;N;m
+deprisa;fast;V;
+derrumbar;to demolish;V;
+destacar;to emphasize;V;
+desvanecer;to dispel;V;
+desvanecer;to dispel;V;
+devorar;to devour;V;
+diminuto;tiny;Adj;
+diseñar;to design;V;
+dorado;golden;Adj;
+echar;to throw;V;
+emocional;emotional;Adj;
+el engaño;deceit;N;m
+engordar;to gain weight;V;
+entrar;to enter;V;
+escapar;to escape;V;
+esclarecer;to clear up;V;
+febril;feverish;Adj;
+formidable;fantastic;Adj;
+gemelo;twin;Adj;
+la gula;gluttony;N;f
+el gusanillo;spiral binding;N;m
+hallar;to find;V;
+la hembra;female;N;f
+la herramienta;tool;N;f
+instar;to urge;V;
+la jaula;cage;N;f
+la jornada;working day;N;f
+lidiar;to deal with;V;
+ligar;to tie;V;
+la llama;flame;N;f
+luchar;to fight;V;
+mantecoso;greasy;Adj;
+el melocotón;peach;N;m
+la miel;honey;N;f
+morder;to bite;V;
+oler;to smell;V;
+la paloma;dove;N;f
+pesar;to weigh;V;
+picotear;to peck;V;
+polivalente;polyvalent;Adj;
+poner;to put;V;
+portátil;portable;Adj;
+potente;powerful;Adj;
+el puñado;handful;N;m
+rebatir;to refute;V;
+el recurso;resource;N;m
+relucir;to shine;V;
+la rienda;rein;N;f
+el runrún;whir;N;m
+el salero;salt shaker;N;m
+ser;to be;V;
+el sorbo;sip;N;m
+soñoliento;sleepy;Adj;
+el sueldo;salary;N;m
+sórdido;sordid;Adj;
+el tiovivo;merry-go-round;N;m
+la toalla;towel;N;f
+la tolva;hopper;N;f
+la tolva;hopper;N;f
