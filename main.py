@@ -205,3 +205,5 @@ def main():
 # actual code
 if __name__ == '__main__':
     gui()
+
+## Version 0.1.0 - alpha, see notes at GitHub (MMatty#8137)
