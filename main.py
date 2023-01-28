@@ -1,18 +1,7 @@
 # libraries and presets
-from __future__ import print_function
-import datetime
-from datetime import date
-import os.path
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
-import PySimpleGUI as sg
 from tkinter import *
 from tkinter import ttk, filedialog
 from tkinter.filedialog import askopenfile
-import os
 import tkinter as tk
 from tkinter import ttk
 from tkinter.filedialog import askopenfile, askopenfilename
@@ -20,28 +9,11 @@ import sv_ttk
 from os import link
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver import DesiredCapabilities
-from bs4 import BeautifulSoup #pip install beautifulsoup4
+from bs4 import BeautifulSoup 
 import PySimpleGUI as sg
-import tkinter as tk
-from tkinter import ttk
-import sv_ttk
-import csv
-from tkinter import *
-import tkinter.ttk as ttk
 from tkinter import messagebox
-import csv
 from datetime import datetime
-import requests
 from selenium.webdriver.chrome.service import Service
-import time
 from webdriver_manager.chrome import ChromeDriverManager
 
 # gui set-up
@@ -206,4 +178,4 @@ def main():
 if __name__ == '__main__':
     gui()
 
-## Version 0.1.0 - alpha, see notes at GitHub (MMatty#8137)
+## Version 0.1.1 - alpha, see notes at GitHub (MMatty#8137)
