@@ -23,7 +23,7 @@ Simple and elegant way of converting Kindle Vocabulary into properly formatted A
 - open Kindle2Anki and choose the exported file
 - submit file
 - console may appear, ignore all errors - they are non-critical
-- output.exe file will appear in Kindle2Mate source folder
+- output.txt file will appear in Kindle2Mate source folder
 - open Anki and import the whole file (I recommend "Spanish" card type from Duolingo Vocab pack, see https://ankiweb.net/shared/info/247695077)
 - for next use make sure output.txt is _empty_ (else it will be appended, Anki should detect duplicates and ignore them fortunately)
 - you can add SpanishDict sound files via AwesomeTTS, see https://ankiweb.net/shared/info/1436550454 (HyperTTS does not have SpanishDict, yet!)

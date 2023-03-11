@@ -1,3 +1,4 @@
+## Version 0.1.2 - alpha, see notes at GitHub (MMatty#8137)
 # libraries and presets
 from tkinter import *
 from tkinter import ttk, filedialog
@@ -182,5 +183,3 @@ def main():
 # actual code
 if __name__ == '__main__':
     gui()
-
-## Version 0.1.2 - alpha, see notes at GitHub (MMatty#8137)
