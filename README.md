@@ -2,6 +2,10 @@
 
 Simple and elegant way of converting Kindle Vocabulary into properly formatted Anki flashcards.
 
+**How to download**
+- click "Releases" here on GitHub and download the zip file
+- extract and enjoy!
+
 **Supported languages**
 - Spanish (SpanishDict)
 
