@@ -1,0 +1,210 @@
+colgar;to hang;V;
+la presa;prey;N;f
+la oleada;wave;N;f
+surtir;to supply;V;
+temblar;to shake;V;
+el timón;rudder;N;m
+la vela;candle;N;f
+empujar;to push;V;
+el chaleco;vest;N;m
+el arrecife;reef;N;m
+virar;to tack;V;
+el/la tripulante;crew member;N;m/f
+la eslora;length;N;f
+la huida;escape;N;f
+la complejidad;complexity;N;f
+el puñetazo;punch;N;m
+esquivar;to dodge;V;
+audaz;audacious;Adj;
+la hoguera;bonfire;N;f
+arder;to burn;V;
+sucumbir;to succumb;V;
+dotado, dotada;gifted;Adj;
+resistir;to withstand;V;
+salvo;safe;Adj;
+agotar;to exhaust;V;
+el tendón;tendon;N;m
+afable;affable, kind;Adj;
+despiadado, despiadada;ruthless;Adj;
+la contraparte;opposing party;N;f
+señalar;to show;V;
+sangrar;to bleed;V;
+la furia;fury;N;f
+siniestro;sinister;Adj;
+diestro;right;Adj;
+infligir;to inflict;V;
+sopesar;to weigh;V;
+el golpe;hit;N;m
+premeditado, premeditada;premeditated;Adj;
+golpear;to hit;V;
+la cautela;caution;N;f
+el provecho;benefit;N;m
+el estribo;stirrup;N;m
+progenitor;el progenitor;N;m
+avergonzar;to embarrass;V;
+la cancha;court;N;f
+el baloncesto;basketball;N;m
+interferir;to interfere with;V;
+el/la tre;ballast;N;m
+la ventaja;advantage;N;f
+la ira;anger;N;f
+el balancín;rocking chair;N;m
+opuesto;opposite;Adj;
+atracar;to rob;V;
+concebir;to conceive;V;
+coercitivo;coercive;Adj;
+clavado, clavada;nailed;Adj;
+tramar;to plot;V;
+el trastorno;disorder;N;m
+ingresar;to enter;V;
+pestañear;to blink;V;
+maloliente;stinking;Adj;
+desaliñado, desaliñada;scruffy;Adj;
+la amenaza;threat;N;f
+el ascensor;elevator;N;m
+el fraude;fraud;N;m
+votar;to vote;V;
+la ecuación;equation;N;f
+el subidón;high;N;m
+elogiar;to praise;V;
+lanzar;to throw;V;
+acceder;to agree;V;
+el botín;plunder;N;m
+la trampa;trap;N;f
+el arrojo;daring;N;m
+la cortesía;courtesy;N;f
+pisotear;to trample on;V;
+el/la espía;spy;N;m
+suave;smooth;Adj;
+el mordisco;bite;N;m
+chasquear;to snap;V;
+observar;to watch;V;
+el sometimiento;subjugation;N;m
+el/la erudito;scholar;N;m
+el/la gerente;manager;N;m
+el dominio;control;N;m
+ahondar;to deepen;V;
+golpear;to hit;V;
+enfadado, enfadada;angry;Adj;
+lesionado, lesionada;injured;Adj;
+el antojo;craving;N;m
+someter;to subdue;V;
+averiguar;to find out;V;
+rellenar;to refill;V;
+subyacente;underlying;Adj;
+claudicar;to give up;V;
+la lanzadera;shuttle;N;f
+el celo;zeal;N;m
+delgado, delgada;thin;Adj;
+valioso;valuable;Adj;
+menudo;small;Adj;
+perezoso;lazy;Adj;
+la comilona;feast;N;f
+la carencia;scarcity;N;f
+beicon;el faro;N;m
+la palanca;lever;N;f
+el/la emprendedor;entrepreneur;N;m
+el juguete;toy;N;m
+acudir;to go to;V;
+la tenacidad;tenacity;N;f
+ahorrador;thrifty;Adj;
+la traza;appearance;N;f
+evaluar;to evaluate;V;
+la acera;sidewalk;N;f
+el/la cachorro;puppy;N;m
+la juguetería;toy store;N;f
+la nave;ship;N;f
+la taquilla;box office;N;f
+la recaudación;collection;N;f
+la trama;plot;N;f
+el gasto;spending;N;m
+reparar;to repair;V;
+asombroso;amazing;Adj;
+el tesoro;treasure;N;m
+el cofre;chest;N;m
+sumergir;to submerge;V;
+enganchar;to hook;V;
+afirmar;to assert;V;
+la tríada;triad;N;f
+aterrador;terrifying;Adj;
+asimismo;also;Adv;
+el rasgo;feature;N;m
+sugerir;to suggest;V;
+proclive;inclined;Adj;
+alcanzar;to reach;V;
+el rayo;ray;N;m
+expendedor;vending;Adj;
+hallar;to find;V;
+la ludopatía;compulsive gambling;N;f
+la lentitud;slowness;N;f
+temblar;to shake;V;
+el rugido;roar;N;m
+el empujón;push;N;m
+alejar;to move away from;V;
+la sensación;sensation;N;f
+la roca;rock;N;f
+encima;above;Adv;
+la ansia;yearning;N;f
+la embriaguez;drunkenness;N;f
+la velada;evening;N;f
+el capricho;whim;N;m
+el albedrío;free will;N;m
+pero;but;CONJUNCTION;
+perjudicial;damaging;Adj;
+la gota;drop;N;f
+intrascendente;insignificant;Adj;
+cautivar;to captivate;V;
+el grifo;faucet;N;m
+gotear;to drip;V;
+el fregadero;sink;N;m
+la tentación;temptation;N;f
+la efímera;mayfly;N;f
+recaer;to suffer a relapse;V;
+la lucha;fight;N;f
+la privación;deprivation;N;f
+concienzudo;thorough;Adj;
+aliviar;to relieve;V;
+el subidón;high;N;m
+el váter;toilet;N;m
+la embriaguez;drunkenness;N;f
+colocado, colocada;placed;Adj;
+la frente;forehead;N;f
+la jeringuilla;syringe;N;f
+además;besides;Adv;
+la vena;vein;N;f
+el torrente;torrent;N;m
+el pulmón;lung;N;m
+esnifar;to sniff;V;
+apetecible;appetizing;Adj;
+el eje;axis;N;m
+el porro;joint;N;m
+la lejía;bleach;N;f
+la ansia;yearning;N;f
+el acontecimiento;event;N;m
+maleable;malleable;Adj;
+la saciedad;satiety;N;f
+acudir;to go to;V;
+salvo;safe;Adj;
+el secuestro;kidnapping;N;m
+adquirir;to acquire;V;
+el fracaso;failure;N;m
+el recelo;suspicion;N;m
+el despilfarro;waste;N;m
+equivocar;to get wrong;V;
+el arrepentimiento;regret;N;m
+el remordimiento;remorse;N;m
+obstante;however;CONJUNCTION;
+la hembra;female;N;f
+el paro;stoppage;N;m
+concertar;to set up;V;
+matizar;to qualify;V;
+el planteamiento;approach;N;m
+vincular;to link;V;
+el arbusto;bush;N;m
+agudizar;to sharpen;V;
+observar;to watch;V;
+la baya;berry;N;f
+oler;to smell;V;
+valioso;valuable;Adj;
+el cobijo;shelter;N;m
+la inanición;starvation;N;f

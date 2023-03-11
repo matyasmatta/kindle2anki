@@ -91,7 +91,11 @@ def main():
     options.add_argument("--allow-mixed-content")
 
     # since v0.0.2 no longer necessary to pass in chromedrive location, now it will install on its own! (about 8 MiB so no worries)
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    try:
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    except:
+        tk.messagebox.showerror(title="Chrome version incompatible", message="Your version of Chrome might not be up-to-date, please visit Chrome settings to update.", **options)
+
     driver.implicitly_wait(10)
 
     # main loop
@@ -142,6 +146,7 @@ def main():
                     #### fix for words that work with both genders
                     if word.startswith("el la"):
                         word = "el/la " + word[6:]
+                        gender = "m/f"
                     type = "N"
                 ### make sure to use " VERB" due to adverbs conflicting!
                 if " VERB" in type:
@@ -178,4 +183,4 @@ def main():
 if __name__ == '__main__':
     gui()
 
-## Version 0.1.1 - alpha, see notes at GitHub (MMatty#8137)
+## Version 0.1.2 - alpha, see notes at GitHub (MMatty#8137)
