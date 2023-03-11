@@ -177,7 +177,7 @@ def main():
                 failed_runs += 1
     total_runs = successful_runs + failed_runs
     success_rate = (successful_runs/total_runs)*100
-    print(success_rate, "%")
+    print(round(success_rate,1), "%")
 
 
 # actual code
