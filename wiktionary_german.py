@@ -87,7 +87,6 @@ def get_gender(language, word):
     gender = gender[0]
     return gender
 
-
 def get_additionals(language, word):
     additionals = ""
     wordtype = get_wordtype(language, word)
@@ -139,8 +138,6 @@ def get_perfectum(language, word):
 
     return perfectum
 
-        
-    
 def get_data(word):
     global synonyms
     synonyms = ""
