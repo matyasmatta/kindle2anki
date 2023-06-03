@@ -75,6 +75,8 @@ def get_example(language, word, count = 1):
         global synonyms
         synonyms = examples[9:-1]
         examples = ""
+    if examples.startswith("Antonym"):
+        examples = ""
     return examples
 
 def get_gender(language, word):

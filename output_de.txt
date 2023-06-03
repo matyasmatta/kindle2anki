@@ -1,0 +1,43 @@
+vertiefen, to deepen,,,"vertiefte, h. vertieft",,verb
+einbürgern,,,,"bürgerte ein, h. eingebürgert",,verb
+plappern,to babble,,,"plapperte, h. geplappert",,verb
+unwillkürlich,"spontaneous, instinctive, involuntary",,,,,adjective
+entladen,"to unload, to discharge",,,"entlud, h. entladen, past subjunctive entlüde",,verb
+der Ärger,"annoyance, anger",,,," Zorn, Wut, Rage",noun
+zittern,"to shiver, to tremble, to vibrate",,,"zitterte, h. gezittert",,verb
+heute,today,,,,,adverb
+der Flugkörper,"spacecraft, spaceship, satellite",,,,,noun
+der Verdacht,suspicion,,,,,noun
+die Wut,rage; fury; outrage,,,," Zorn, Ärger",noun
+notwendig,necessary; essential; indispensable (für (“for”) + accusative),,,,nötig,adjective
+bedauerlich,regrettable,,,,,adjective
+seelenruhig,"calm, placid",,,,,adjective
+selbstverständlich,"natural, self-evident",,,,,adjective
+weigern, to refuse ,,,"weigerte, h. geweigert",ablehnen,verb
+die Regelung,regulation,,,,,noun
+beurteilen," to form an opinion on, to judge",,,"beurteilte, h. beurteilt",,verb
+jeglicher,"any, each, every",,,,,determiner
+quetschen,"to squeeze, to squish",,,"quetschte, h. gequetscht",,verb
+die Aufnahme,reception,,,,,noun
+die Tastatur,"keyboard (on a computer, typewriter, etc.)",,,,,noun
+das Leder,leather,,,,,noun
+die Herablassung,condescension (patronizing attitude or behavior),,,,,noun
+mürrisch,"grumpy, sullen, morose, surly, moody, dour, cantankerous, glum, crabby",,,,,adjective
+die Erneuerung,"renewal, replacement",,,,,noun
+düster,"dark, dim, gloomy, obscure",,,,,adjective
+die Fläche,surface,,,,,noun
+übrig,"(attributive) rest of, remaining",,,,,adjective
+zögern," to hesitate, to pause before doing something.",,,"zögerte, h. gezögert",,verb
+klopfen,,,,"klopfte, h. geklopft",,verb
+vernehmen, to hear,,,"vernahm, h. vernommen, past subjunctive vernähme",hören,verb
+riss,first/third-person singular preterite of reißen,,,,,verb
+ertönen, to sound; to ring out,,,"ertönte, s. ertönt",erklingen,verb
+die Summe,sum (maths),,,,,noun
+ebenfalls,"also, likewise, as well",,,,gleichfalls,adverb
+der Flur,"hall, hallway, corridor, stairwell",,,," Diele, Korridor, Vorzimmer",noun
+grimmig,"grim, fierce, ferocious",,,,,adjective
+entgegen,against,,,,,adverb
+das Gedränge,crowd,,,,,noun
+der Rückspiegel,rearview mirror,,,,,noun
+einlassen, to let in; to admit; to grant entry,,,"ließ ein, h. eingelassen"," hereinlassen, hineinlassen, reinlassen, Zutritt gewähren",verb
+das Gelände,"area, terrain",,,,,noun

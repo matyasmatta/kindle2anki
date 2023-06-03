@@ -22,11 +22,13 @@ import re
 from wiktionaryparser import WiktionaryParser
 import json
 from PyDictionary import PyDictionary
-import googletrans
+from googletrans import Translator
 from deep_translator import GoogleTranslator
 from deep_translator import PonsTranslator
 import wiktionary_german
 from unidecode import unidecode
+import pandas as pd
+import csv
 
 # gui set-up
 class App(ttk.Frame):
@@ -206,12 +208,14 @@ def selenium_module():
     driver.implicitly_wait(10)
 
 def german():
-    with open(filepath, "r+", errors='ignore', encoding="utf16") as file:
+    def unicode_conversion(word):
+        word = word.encode("utf-8")
+        return word
+    with open(filepath, "r", errors='ignore', encoding="utf-16") as file:
         for line in file:
             try:
                 print(line.rstrip())
                 word_original = line.rstrip()
-                word_original = word_original.replace('\x00','')
                 word = unidecode(word_original)
 
                 parser = WiktionaryParser()
@@ -220,6 +224,18 @@ def german():
                     parsed[0]['definitions'][0]['text'] == []
                     word, definition, wordtype, example, additionals, synonyms = wiktionary_german.get_data(word_original)
                     print(word, definition, wordtype, example, additionals, synonyms)
+                    if example:
+                        translator = Translator()
+                        result = translator.translate(example, src='de', dest='en')
+                        example_english = result.text
+                    else:
+                        example_english = ""
+
+                    with open("output_de.txt", "a", encoding='utf-8', newline='') as f:
+                        f.seek(0)
+                        writer = csv.writer(f)
+                        content = [word, definition, example, example_english, additionals, synonyms, wordtype]
+                        writer.writerow(content)
                 except:
                     Exception
             except:
