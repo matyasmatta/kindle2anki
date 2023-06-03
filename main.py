@@ -25,6 +25,8 @@ from PyDictionary import PyDictionary
 import googletrans
 from deep_translator import GoogleTranslator
 from deep_translator import PonsTranslator
+import wiktionary_german
+from unidecode import unidecode
 
 # gui set-up
 class App(ttk.Frame):
@@ -204,162 +206,24 @@ def selenium_module():
     driver.implicitly_wait(10)
 
 def german():
-    def wiktionary(word):
-        # Set driver for requests
-        language_code = 'de'  # German language code
-        url = f"https://{language_code}.wiktionary.org/w/api.php?action=query&titles={word}&prop=revisions&rvprop=content&format=json"
-        response = requests.get(url)
-        data = response.json()
-
-        # Set variables
-        gender = None
-        preterite = None
-        word_type = None
-        participle = None
-        auxiliary = None
-        definitions = None
-
-        # Translation/definition
-        try:
-            language_code = 'en'  # English language code
-            url = f"https://{language_code}.wiktionary.org/w/api.php?action=query&titles={word}&prop=extracts&format=json"
-
-            response = requests.get(url)
-            data = response.json()
-
-
-            if 'pages' in data['query']:
-                page = next(iter(data['query']['pages'].values()), None)
-                if page and 'extract' in page:
-                    # Split the extract into individual definitions
-                    raw_definitions = page['extract'].split("\n#")[1:]
-                    for raw_def in raw_definitions:
-                        # Clean up the definition text
-                        cleaned_def = raw_def.strip("* :#")
-                        definitions.append(cleaned_def)
-        except:
-            pass
-        try:
-            definitions = PonsTranslator(source='german', target='english').translate(word, return_all=True)
-        except:
-            pass
-        try:
-            definitions = GoogleTranslator(source='de', target='en').translate(word, return_all=True)
-        except:
-            pass
-
-        # Wordtype
-        language_code = 'de'  # German language code
-        url = f"https://{language_code}.wiktionary.org/w/api.php?action=query&titles={word}&prop=revisions&rvprop=content&format=json"
-
-        response = requests.get(url)
-        data = response.json()
-        try:
-            if 'pages' in data['query']:
-                page = next(iter(data['query']['pages'].values()), None)
-                if page and 'revisions' in page:
-                    content = page['revisions'][0]['*']
-                    word_type_index = content.find('{{Wortart|')
-                    if word_type_index != -1:
-                        word_type_start = word_type_index + len('{{Wortart|')
-                        word_type_end = content.find('|', word_type_start)
-                        word_type = content[word_type_start:word_type_end]
-                    
-                    if word_type == "Substantiv":
-                        gender_index = content.find('{{Deutsch Substantiv')
-                        if gender_index != -1:
-                            gender_start = content.find('|Genus=', gender_index)
-                            if gender_start != -1:
-                                gender_start += len('|Genus=')
-                                gender_end = content.find('|', gender_start)
-                                gender = content[gender_start:gender_end]
-
-                        # Handle alternative template for gender
-                        if not gender:
-                            gender_index = content.find('{{Deutsch Substantiv')
-                            if gender_index != -1:
-                                gender_start = content.find('|Geschlecht=', gender_index)
-                                if gender_start != -1:
-                                    gender_start += len('|Geschlecht=')
-                                    gender_end = content.find('|', gender_start)
-                                    gender = content[gender_start:gender_end]
-        except:
-            pass
-        try:
-            # wordtype
-            selenium_module()
-            driver.get(f"https://de.wiktionary.org/wiki/{word}")
-            word_type = driver.find_element(By.XPATH, '//*[@id="Substantiv,_m"]/a').text
-        except:
-            pass
-
-        if word_type == "Verb":
-            # preterite
-            try:
-                # Extract past tense for verbs
-                past_tense_index = content.find('{{Deutsch Verb Konjugation|')
-                if past_tense_index != -1:
-                    past_tense_start = past_tense_index + len('{{Deutsch Verb Konjugation|')
-                    past_tense_end = content.find('|', past_tense_start)
-                    preterite = content[past_tense_start:past_tense_end]
-            except:
-                pass
-            try:
-                past_tense_match = re.search(r"{{Deutsch Verb Konjugation\|Präteritum=(.*?)\|", content)
-                if past_tense_match:
-                    preterite = past_tense_match.group(1)
-            except:
-                pass
-            try:
-                # Extract past tense for verbs
-                past_tense_match = re.search(r"\{\{VORGÄNGER\|(.*?)\}\}", content)
-                if past_tense_match:
-                    preterite = past_tense_match.group(1)
-            except:
-                pass
-            try:
-                selenium_module()
-                driver.get(f"https://de.wiktionary.org/wiki/{word}")
-                preterite = driver.find_element(By.XPATH, '//*[@id="mw-content-text"]/div[1]/table[2]/tbody/tr[5]/td[2]/a').text
-                participle = driver.find_element(By.XPATH, '//*[@id="mw-content-text"]/div[1]/table[2]/tbody/tr[10]/td[1]/a').text
-                auxiliary = driver.find_element(By.XPATH, '//*[@id="mw-content-text"]/div[1]/table[2]/tbody/tr[10]/td[2]/a').text
-            except:
-                print("Selenium exception module failed")
-
-        return definitions, word_type, gender, preterite, participle, auxiliary
-    class legacy_wiktionary_selenium:
-            def word_type(word):
-                selenium_module()
-                link = "https://en.wiktionary.org/wiki/" + word +"#German"
-                driver.get(link)
-                
-                word_type_xpath = '//*[@id="Noun_2"]'
-                word_type = driver.find_element(By.XPATH, word_type_xpath).text
-                return word_type
-            
-            def noun(word):
-                selenium_module()
-                gender_xpath = "/html/body/div[3]/div[3]/div[5]/div[1]/p[4]/span[1]/abbr"
-                try:
-                    gender = driver.find_element(By.CLASS_NAME, "gender").text
-                except:
-                    gender = driver.find_element(By.XPATH, gender_xpath).text
-                return gender
-            
-            def verb(word):
-                selenium_module()
-                try:
-                    preterite = driver.find_element(By.CLASS_NAME, "Latn form-of lang-de 1//3|s|pret-form-of").text
-                except:
-                    preterite_xpath = '/html/body/div[3]/div[3]/div[5]/div[1]/p[2]/b[2]'
-                    preterite = driver.find_element(By.XPATH, preterite_xpath).text
-
-    with open(filepath, "r+", errors='ignore', encoding="utf8") as file:
+    with open(filepath, "r+", errors='ignore', encoding="utf16") as file:
         for line in file:
-            print(line.rstrip())
-            word = line.rstrip()
-            definitions, word_type, gender, preterite, participle, auxiliary = wiktionary(word)
-            print(definitions, word_type, gender, preterite, participle, auxiliary)
+            try:
+                print(line.rstrip())
+                word_original = line.rstrip()
+                word_original = word_original.replace('\x00','')
+                word = unidecode(word_original)
+
+                parser = WiktionaryParser()
+                parsed = parser.fetch(word_original, 'german') 
+                try:
+                    parsed[0]['definitions'][0]['text'] == []
+                    word, definition, wordtype, example, additionals, synonyms = wiktionary_german.get_data(word_original)
+                    print(word, definition, wordtype, example, additionals, synonyms)
+                except:
+                    Exception
+            except:
+                pass
 
 
 # actual code
